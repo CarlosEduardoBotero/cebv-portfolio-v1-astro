@@ -1,0 +1,14 @@
+---
+import { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import LocaleSelector from "../../components/LocaleSelector.astro";
+
+changeLanguage("es");
+---
+
+<Layout title="calros">
+    <h1>Carlos Botero</h1>
+    <main class="text-white">
+        Soy carlos y locale es: <h1>{t("home.title")}</h1>
+    </main>
+</Layout>
